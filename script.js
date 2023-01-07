@@ -62,7 +62,7 @@ function randomVers(numVers){
 }
 
 function randomColor(){
-    const colors = ["#E573A5","#EFA2C5","#82A1DB","#6283C2","#EC8171","#FFFFFF","#79BBA4","#A8DEC1","#FFE6A2"];
+    const colors = ["#E573A5","#EFA2C5","#82A1DB","#6283C2","#EC8171","#79BBA4","#A8DEC1","#FFE6A2"];
     let rdm = Math.floor(Math.random() * colors.length); 
     return colors[rdm];
 }
