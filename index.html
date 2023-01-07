@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Haikus en couleur</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body>
+        <button id="helpButton" class="help-button" type="button">
+            <span class="material-symbols-outlined ">help</span>
+        </button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Il nous faudrait des haikus en couleur... <br> Cliquez sur un vers du haiku pour le garder et modifier les deux autres vers.</p>
+            </div>
+        </div> 
+
+        <main>
+            <div class="flex-container container">
+                <p id="vers1" class="flex-item fade-in-text" onclick="stayOn('1')">Froid au milieu du chaud</p>
+                <p id="vers2" class="flex-item fade-in-text" onclick="stayOn('2')">Il faudrait rentrer vite à la maison</p>
+                <p id="vers3" class="flex-item fade-in-text" onclick="stayOn('3')">Mais je ne peux pas</p>
+            
+                <svg id="animCercle" class="pulse">  <!-- version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" -->
+                    <circle id="Oval" cx="50%" cy="50%" r="100%"></circle>
+                </svg>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script> 
+
+</html>
